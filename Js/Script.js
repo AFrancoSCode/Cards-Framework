@@ -5,6 +5,8 @@ list.forEach(function(e){
         while(!e.classList.contains('c-Container')){
             e = e.parentElement;
         }
-        e.classList.toggle('c-Container-v');
+        if(e.querySelector('.c-Hidden')){
+            e.classList.toggle('c-Container-v');
+        }
     });
 });
